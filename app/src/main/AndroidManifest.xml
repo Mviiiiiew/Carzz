@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thaiins.thaiinsurancecarinspection">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.thaiins.thaiinsurancecarinspection.configuration.GlideConfigguration"
+            android:value="GlideModule" />
+
+        <activity
+            android:name=".activity.CarDetailMainActivity"
+            android:label="@string/app_name_with_cardetail"
+            android:theme="@style/AppThemeWithCarDetail" />
+        <activity
+            android:name=".activity.CarDetailMileMainActivity"
+            android:label="@string/app_name_with_cardetail_mile"
+            android:theme="@style/AppThemeWithCarDetail" />
+        <activity
+            android:name=".activity.CarDetailCarRoundMainActivity"
+            android:label="@string/app_name_with_cardetail_car_round_1"
+            android:theme="@style/AppThemeWithCarDetail" />
+        <activity android:name=".activity.CarFindLocationMainActivity"></activity>
+    </application>
+
+</manifest>

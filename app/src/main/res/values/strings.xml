@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ThaiInsuranceCarInspection</string>
+    <string name="app_name_with_cardetail">Car Detail</string>
+    <string name="app_name_with_cardetail_mile">Capture Mile</string>
+    <string name="app_name_with_cardetail_car_round_1">Car Round: Step 1</string>
+
+</resources>

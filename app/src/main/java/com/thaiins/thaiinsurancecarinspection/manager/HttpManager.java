@@ -35,7 +35,7 @@ public class HttpManager {
                 .create();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.1.6:8080/MyTestWeb/")
+                .baseUrl("http://128.199.170.97:8080/MyTestWeb/")
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
 
